@@ -57,6 +57,7 @@ section {
     background-color: white;
     display: flex;
     justify-content: space-between;
+    border-radius: 0.8em;
 }
 
 .section1{
@@ -186,6 +187,7 @@ input[type="submit"]:disabled {
 .contact{
     display: flex;
     flex-direction: column;
+    background-color: aliceblue;
 }
 
 .contact h2{
