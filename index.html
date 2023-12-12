@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Pablo Rivera Guerra">
+    <meta name="description" content="Portfolio website for Juan Pablo Rivera Guerra, a Seneca College student.">
+    <meta name="keywords" content="portfolio, Juan Pablo Rivera Guerra, Seneca College, web development">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Juan Pablo Rivera Guerra - Portfolio</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <img src="/img/Juan2.jpg" alt="Juan Rivera Image">
+            <h1>Juan Pablo Rivera Guerra</h1>
+            <p>Web Developer | Seneca College</p>
+
+            <!-- Create two buttons -->
+            <div class="buttons">
+                <a href="resources/Data Entry 2023 resume.docx" download="Data Entry 2023 resume.docx">
+                    <button class="button">
+                        <img src="resources/download-button.png" alt="download-button" class="download-button">
+                        Resume</button>
+                </a>
+                <button class="button" onclick="window.location.href='#contact-section'">Contact Me</button>
+            </div>
+        </header>
+
+        <section>
+
+            <div class="section1">
+                <h2>About Me</h2>
+                <p>Hello! I'm Juan Pablo Rivera, an international student from Colombia currently residing in the vibrant city of
+                    Toronto. I am pursuing my education at Seneca College Polytechnic, where I am honing my skills in web development
+                    and technology.
+                
+                    Living in a diverse and dynamic city like Toronto has enriched my cultural experiences and broadened my
+                    perspectives. It's here that I've discovered my passion for creating innovative and user-friendly websites that make
+                    a positive impact.
+                
+                    As a dedicated student, I am committed to continuous learning and staying updated with the latest trends in web
+                    development. I thrive in collaborative environments and am always eager to take on new challenges that allow me to
+                    expand my skill set.
+                
+                    My goal is to contribute to the tech industry by combining my creativity and technical knowledge to develop
+                    solutions that make a difference. I am actively seeking opportunities to apply my skills in a professional setting
+                    and contribute to meaningful projects.
+                
+                    Thank you for visiting my portfolio. I look forward to connecting with fellow professionals, employers, and
+                    collaborators who share a passion for technology and innovation.
+                </p>
+    
+                <p><strong>Date:</strong> November 2023</p>
+            </div>
+
+            <div class="section2">
+                <h2>Basic Information</h2>
+                <p><strong>Age:</strong> 30</p>
+                <p><strong>Email:</strong> juanrg0493@gmail.com</p>
+                <p><strong>Languages:</strong> English, Spanish</p>
+                <p><strong>Class Section:</strong> NAA</p>
+                <p><strong>StudentId:</strong> 137647228</p>
+                <p><strong>Instructor:</strong> Mark Meritt</p> 
+            </div>
+
+
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            
+            <div class="education-section">
+                <div class="education-card">
+                    <h3>Computer Programming</h3>
+                    <p>Ontario College Diploma</p>
+                    <p>Seneca College Polytechnic</p>
+                    <p>Expected Graduation: 2025</p>
+                </div>
+
+                <div class="education-card">
+                    <h3>Economist</h3>
+                    <p>Bachelor in economics</p>
+                    <p>Universidad del Rosario</p>
+                    <p>2018</p>
+                </div>
+
+            </div>
+            
+        
+            <!-- Add more cards for additional education information if needed -->
+        </section>
+
+
+        <section class="contact" id="contact-section">
+            <h2>Contact Me!</h2>
+            <form id="contactForm" action="https://httpbin.org/post" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+        
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" list="cities" required>
+                <datalist id="cities">
+                    <option value="Toronto">
+                    <option value="Vancouver">
+                    <option value="Montreal">
+                    <!-- Add more common Canadian cities as needed -->
+                </datalist>
+        
+                <label for="postalCode">Postal Code:</label>
+                <input type="text" id="postalCode" name="postalCode" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" required>
+                <!-- Regex pattern for Canadian Postal Code -->
+        
+                <label>What is this about?</label>
+
+                <div class="radioQuestions">
+                    <label class="radioSelection"><input type="radio" name="topic" value="Question" required class="radioInput"> Question</label>
+                    <label class="radioSelection"><input type="radio" name="topic" value="Comment" required class="radioInput"> Comment</label>
+                    <label class="radioSelection"><input type="radio" name="topic" value="Hiring" required class="radioInput"> Hiring</label>
+                </div>
+
+        
+                <div id="hourlyRateContainer" style="display: none;">
+                    <label for="hourlyRate">Hourly Rate:</label>
+                    <input type="number" id="hourlyRate" name="hourlyRate" step="0.01">
+                </div>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+        
+                <label for="additionalInput">Additional Input:</label>
+                <input type="text" id="additionalInput" name="additionalInput" required>
+        
+                <input type="submit" value="Submit" disabled>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2023 Juan Pablo Rivera Guerra. All rights reserved.</p>
+        </footer>
+
+    </div>
+    
+
+</body>
+
+</html>
+

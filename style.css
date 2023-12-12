@@ -1,0 +1,221 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #a1eafb;
+    
+}
+
+.container {
+    width: 95%;
+    max-width: 1024px;
+}
+
+header, section, footer {
+    margin: 1.2em 0;
+}
+
+header {
+    margin-top: 2em;
+    background-color: #a1eafb;
+    color: #212121;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1{
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin-bottom: 0em;
+  }
+
+
+header p{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+header img {
+    max-width: 25%; /* Ensure the image doesn't exceed the container width */
+    height: auto;
+    margin-bottom: 0.3em; /* Add some space below the image */
+    border-radius: 25px;
+}
+
+.download-button{
+    border-radius: 0px;
+    margin-right: 0.3em;
+}
+
+section {
+    padding: 2em;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+
+.section1 p{
+    text-align: justify;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+
+
+footer {
+    background-color: #a1eafb;
+    color: #212121;
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+    margin-bottom: 0em;
+}
+
+/* Style for the buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    font-size: 1em;
+    margin: 0 1em; /* Add some space between the buttons */
+    padding: 1em 1.5em;
+    background-color: #f06868;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education{
+    background-color: #f3e8cb;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.education-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;;
+}
+
+.education-card {
+    border: 0.1em solid #ddd;
+    border-radius: 0.8em;
+    padding: 1.5em;
+    margin: 0.5em;
+    width: 40%;
+    text-align: center;
+    background-color: #fbafaf;
+}
+
+form {
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 0.625em; 
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 0.5em; 
+    margin-top: 0.3125em; 
+    margin-bottom: 0.625em; 
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin: 0 0.3125em 0 0; 
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.625em 0.9375em; 
+    border: none;
+    border-radius: 0.3125em; 
+    cursor: pointer;
+}
+
+input[type="submit"]:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.radioSelection {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.radioQuestions {
+    margin-bottom: 1.25em;
+}
+
+.radioInput {
+    width: 1.5625em; 
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h2{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width:  768px) {
+    body {
+        font-size: 8px;
+    }
+
+    header {
+        padding: 0.5em;
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    footer {
+        padding: 0.5em;
+    }
+}
+
+@media only screen and (min-width:  769px) {
+    body {
+        font-size: 16px;
+    }
+}
